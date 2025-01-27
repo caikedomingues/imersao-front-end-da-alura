@@ -1,0 +1,77 @@
+
+
+
+<!--Documemto base do html-->
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <title>Spotify Imersão</title>
+
+        <!--O código de reset CSS, como o próprio nome sugere, serve para "zerar" as formatações padrão que os navegadores aplicam aos elementos HTML. Cada navegador tem suas próprias regras de estilo predefinidas, o que pode causar inconsistências visuais entre diferentes plataformas.-->
+        <link rel="stylesheet" href="reset.css">
+
+        <link rel="stylesheet" href="style.css">
+        <!--Vamos realizar o import de uma cdn, que irá criar
+        o nosso logo do inicio no menu principal-->
+        <!--CDN: Imagine um cdn como uma rede de servidores espalhados
+        pelo mundo, que armazenam cópias de arquivos estátiscos
+        (imagens, Css, JavaScript) de um site. Quando um usuário acessa
+        seu site, o CDN entrega esses arquivos a partir do servidor mais próximo, o que acelera o carregamento da página.-->
+        
+        <!--Link do cdn que irá criar icone do inicio no menu-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
+        integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
+
+        <!--Link do cdn que irá criar icone de buscar no menu-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <!--As divs são como uma caixa. Podemos colocar dentro dela qualquer outro elemento HTML, como paragráfos, iamegns, listas,etc. E então, usando CSS, você pode definir o tamanho, a cor, a
+        posição e muitas outras propriedades dessa caixa e de tudo que está dentro dela-->
+        <div class="sidebar">
+            
+            <!--A tag nav serve para criar menus de navegação-->
+            <nav class="sidebar_navigation">
+                <div class="logo">
+                    <a href="">
+                        <!--Caminho do logo do spotify-->
+                        <img src="imagens/icones/logo-spotify.png" alt="logo do spotify">
+                    </a>
+                 </div>
+                 <div>
+                        <!--Criação da lista dos componentes do menu 
+                        de navegação-->
+
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <!--A tag span em html serve como um contâiner inline para elementos textuais. Isso significa que, ao contrário da <div> que cria um bloco,a <span> permite que você agrupe partes especificas de um texto sem quebrar a 
+                                     linha.-->
+                                     <!--Classe que ira adicionar a imagem do servidor no nosso projeto-->
+                                     <span class="fa fa-home"></span>
+                                     <span>Inicio</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <!--Classe que irá adicionar a imagem do servidor no nosso projeto -->
+                                    <span class="fa fa-search"></span>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </body>
+
+</html>
+                                

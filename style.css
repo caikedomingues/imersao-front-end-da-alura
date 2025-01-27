@@ -1,0 +1,123 @@
+
+/*Primeiro vamos selecionar o campo da página que iremos modificar*/
+
+body{
+
+    background-color: black;
+}
+
+
+h1{
+
+    color: white;
+}
+
+
+.sidebar{
+
+    /*O valor fixed da propriedade position em CSS é uma ferramenta
+    poderosa para criar elementos quen permanecem fixos na tela,
+    independemente da rolagem da página. Imagine um menu de navegação
+    que sempre fica visivel no topo da tela mesmo que você role 
+    para baixo. Essa é uma das aplicações mais comuns do position: fixed.*/
+    position: fixed;
+
+    /*Em CSS, a propriedade top serve para posicionar um elemento em
+    relação á sua posição original ou a um ponto de referência definido*/
+    /*Como funciona:
+    Posição relativa: Quando um elemento tem position: relative, a propriedade top move o elemento para baixo a partir de sua posição
+    original. Um valor positivo move o elemento para baixo, enquanto um
+    valor negativo move para cima.
+
+    Posição absoluta: Se um elemento tem position: absolute, a propriedade top posiciona o elemento de uma determinada distância 
+    da borda superior do seu elemento pai mais próximo que tiver um
+    valor de position diferente de static.
+
+    Posição fixa: Com position =  fixed, a propriedade top posiciona o elemento a uma determinada distância da borda superior da viewport (área visivel da página).
+    */
+    top: 0;
+
+    /*A propriedade left em CSS serve para posicionar um elemento em relação a sua borda esquerda. Essa propriedade é fundamental
+    para criar layouts personalizados e organizar os elementos de uma
+    página da web de forma precisa.*/
+
+    /*Como funciona:
+    Posição relativa: Quando um elemento tem position: relative, a propriedade left move o elemento para a esquerda a partir da sua
+    posição original. Um valor positivo move o elemento para a direita, enquanto um valor negativo move para a esquerda.
+
+    Posição Absoluta: Se um elemento tem position: absolute, a propriedade left posiciona o elemento a uma determinada distância
+    da borda esquerda do seu elemento pai mais próximo que tiver um valor position diferente de static.
+    
+    Posição fixa: Com position: fixed, a propriedade left posiciona o elemento a uma determinada distância da borda esquerda da viewport (área visivel da página).
+    */
+
+    left: 0;
+
+    /*Em CSS, a propriedade bottom serve para posicionar um elemento em relação á sua borda inferior. Assim como as propriedades top, left, right, bottom é utilizado em um conjunto com a propriedade position para definir a posição exata de um elemento na página*/
+    
+    /*Como funciona:
+    posição relativa: Quando um elemento tem position: relative, a propriedade bottom move o elemento para cima a partir de sua posição original. Um valorpositivo move o elemento para cima, enquanto um valor negativo move para baixo.
+
+    posição absoluta: Se um elemento tem position: absolute, a propriedade bottom posiciona o elemento a uma determinada distância da borda inferior do seu elemento pai mais próximo que tiver um valor de position diferente de static. 
+
+    posição fixa: Com position: fixed, a propriedade bottom posiciona o elemento a uma determinada distância da borda inferior da viewport (área visivel da página).
+    */
+    bottom: 0;
+
+    padding: 12px;
+
+    width: 300px;
+}
+
+.sidebar_navigation{
+
+    background-color: #121212;
+
+    border-radius: 8px;
+
+    padding: 16px 0 0 16px;
+
+
+}
+
+.sidebar_navigation .logo{
+
+    background-color: #121212;
+
+    display: flex;
+
+    border-radius: 8px;
+
+    padding: 16px 0 0 16px;
+}
+
+.sidebar_navigation .logo img{
+
+    width: 80px;
+
+}
+
+.sidebar nav ul{
+
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+    
+}
+
+.sidebar ul li{
+
+    padding: 10px 0;
+
+
+
+
+}
+
+.sidebar nav ul li a{
+
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+}
