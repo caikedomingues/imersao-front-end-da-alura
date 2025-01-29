@@ -1,0 +1,18 @@
+
+
+/*Vamos criar uma raiz de css que irá padronizar alguns valores
+que serão frequentemente utilizados na estilização do sistema*/
+
+:root{
+
+    /*Fonte*/
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /*Cores*/
+
+    --bg-icon: #131313;
+
+    --bg-arrow-color: rgba(0,0,07)
+
+
+}

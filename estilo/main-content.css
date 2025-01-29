@@ -1,0 +1,183 @@
+
+/*Header*/
+
+.main-container{
+
+    /*Viewport: É a area visivel da janela do navegador onde o 
+    conetúdo de uma página web é exibido. Em outras palavras, é
+    a janela que o usuário vê ao acessar um site.*/
+    max-width: 80vw;   
+
+    height: 100vh;
+
+    margin-left: 320px;
+
+    margin-right: 56px;
+
+
+}
+
+.header_navigation{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 16px;
+
+    margin: 10px;
+
+    border-radius: 8px;
+
+    background-color: #121212;
+
+
+
+}
+
+.header_navigation .navigation{
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+
+}
+
+
+.header_navigation .navigation .arrow-left{
+
+    /*Rem: É uma unidade de medida relativa em CSS que se baseia no tamanho da fonte do elemento raiz (normalmente o elemento HTML).
+    Essa unidade é extremamente útil para criar layouts responsivos 
+    e escaláveis, onde o tamanho dos elementos se ajusta de acordo
+    com as preferências do usuário e o tamanho da tela.*/
+    margin-right: 1.25rem;
+
+}
+
+.arrow-left, .arrow-right{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 32px;
+
+    height: 32px;
+
+    background-color: var(--bg-icon) ;
+
+    background-color: var(--bg-arrow-color);
+
+    border-radius: 50%;
+
+    border-radius: none;
+
+    cursor: pointer;
+
+
+}
+
+
+.header_login{
+
+    display: flex;
+
+    align-items: center;
+}
+
+.header_search{
+
+    display: flex;
+
+    align-items: center;
+
+    width: 364px;
+
+    height: 48px;
+
+    margin-left: 8px;
+
+    background-color: #242424;
+
+    border-radius: 500px;
+
+    border: 1px solid transparent;
+
+
+}
+
+.header_search img{
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-left: 10px;
+}
+
+
+.header_navigation input{
+
+    background-color: transparent;
+
+    border: none;
+
+    padding: 0px 100px 0 12px;
+
+    color: #fff;
+
+    /*text-overflow: A propriedade text-overflow serve para controlar como o texto que ultrapassa as dimensões de um elemento é exibido.
+    Em outras palavras, ela define o que acontece quando o texto fica
+    muito grande para caber dentro do container*/
+
+    /*Valores comuns:
+    
+    ellipsis: Adiciona reticências (...) no final do texto cortado
+
+    clip: Corta o texto sem adicionar nenhuma indicação visual.
+    */
+    text-overflow: ellipsis;
+
+    overflow: hidden;
+
+    /*Ira manter o texto em uma linha só no input*/
+    white-space: nowrap;
+
+    /*Irá tirar a marcação da barra de input*/
+    outline: none;
+}
+
+.header_login .subscribe{
+
+    color: #a7a7a7;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    background-color: transparent;
+
+    margin-right: 32px;
+}
+
+.header_login .login{
+
+    width: 100px;
+
+    height: 48px;
+
+    color: black;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    border-radius: 40px;
+}

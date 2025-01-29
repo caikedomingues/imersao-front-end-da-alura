@@ -12,9 +12,16 @@
         <title>Spotify Imersão</title>
 
         <!--O código de reset CSS, como o próprio nome sugere, serve para "zerar" as formatações padrão que os navegadores aplicam aos elementos HTML. Cada navegador tem suas próprias regras de estilo predefinidas, o que pode causar inconsistências visuais entre diferentes plataformas.-->
-        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="estilo/resset.css">
 
-        <link rel="stylesheet" href="style.css">
+        <!--Link do arquivo que irá conter a raiz do css-->
+
+        <link rel="stylesheet" href="estilo/var.css">
+
+        <!--Estilo do main-content-->
+        <link rel="stylesheet" href="estilo/main-content.css">
+
+        <link rel="stylesheet" href="estilo/style.css">
         <!--Vamos realizar o import de uma cdn, que irá criar
         o nosso logo do inicio no menu principal-->
         <!--CDN: Imagine um cdn como uma rede de servidores espalhados
@@ -32,6 +39,37 @@
     </head>
 
     <body>
+
+        <main>
+            <div class="main-container">
+                <nav class="header_navigation">
+                    <div class="navigation">
+                        <button class="arrow-left">
+                            <img src="imagens/icones/small-left.png" alt="seta esquerda">
+                        </button>
+    
+                        <button class="arrow-right">
+                            <img src="imagens/icones/small-right.png" alt="seta direita">
+                        </button>
+    
+                        <div class="header_search">
+                            <img src="imagens/icones/search.png" alt="">
+                            <!--IDs em HTML são como carteirinhas de identidade para cada elemento da sua página.
+                            Cada ID deve ser único dentro de um documento
+                            Html, servindo como rótulo exclusivo para identificar um elemento especifico-->
+                            <input id="search-input" type="text" maxlength="800" placeholder="o que você quer ouvir?"/>
+                        </div>
+                        
+                        <div class="header_login">
+    
+                            <button class="subscribe">Inscreva-se</button>
+                            <button class="login">Entrar</button>
+    
+                        </div>
+                    </div>
+                </nav>
+            </div>
+         </main>
         <!--As divs são como uma caixa. Podemos colocar dentro dela qualquer outro elemento HTML, como paragráfos, iamegns, listas,etc. E então, usando CSS, você pode definir o tamanho, a cor, a
         posição e muitas outras propriedades dessa caixa e de tudo que está dentro dela-->
         <div class="sidebar">
@@ -100,7 +138,26 @@
             </button>
           </div>
         </div>
-    </div>
+     </div>
+
+     
+     <!--Aqui irei iniciar o footer-->
+     <footer class="disclaimer-premium">
+
+        <div class="text">
+            <p class="disclaimer_premium_title">Testar o Premium de graça</p>
+
+            <p class="disclaimer_premium_subtitle">Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios.
+            Não precisa de cartão de crédito.
+            </p>
+        </div>
+
+        <div class="button">
+            
+            <button type="button">Inscreva-se grátis</button>
+        </div>
+
+      </footer>
 
     </body>
 
