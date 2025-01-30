@@ -1,0 +1,32 @@
+
+/*
+As medias queries são um recurso poderoso do CSS que permite aos desenvolvedores web criar páginas que se adaptam a diferentes 
+tamanhos de tela e dispositivos. Com elas, é possivel definir 
+estilos especificos para diferentes resoluções, orientações
+(retrato ou paisagem) e tipos de midia (impressão, tela, etc).
+  As medias queries consistem em uma regra CSS que verifica se
+determinadas condições podem ser relacionadas a:
+
+Largura e altura da tela: Definir estilos para telas menores, maiores ou
+com larguras especificas.
+
+Orientação: Aplicar estilos diferentes para quando o dispositivo está
+em modo retrato ou paisagem.
+
+Tipo de midia: Criar estilos especificos para impressão, telas, leitores 
+de tela
+
+Resolução: Ajustar estilos para telas com diferentes densidades de pixels.
+*/
+
+@media screen and (max-width: 1015px){
+    
+    .offer_list-item{
+
+        grid-template-columns: 1fr 1fr;
+
+        
+
+    }    
+
+}
