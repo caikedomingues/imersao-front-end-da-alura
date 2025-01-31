@@ -102,7 +102,7 @@ document.addEventListener('input', function() {
     if(searchTerm === '' ){
 
         resultPlaylist.classList.add('hidden');
-
+        
         resultsArtist.classList.remove('hidden');
  
         return;
